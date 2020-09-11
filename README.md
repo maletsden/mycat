@@ -34,6 +34,6 @@ mycat [-h|--help] [-A] <file1> <file2> ... <fileN>
 ```
 
 If no arguments provided, the program will finish with code 0, but nothing will be printed.
-Option "-A" will print invisible characters as their hex value.
+Option "-A" will print invisible characters as their hex values.
 
 Help flags `-h`/`--help` support is available.
