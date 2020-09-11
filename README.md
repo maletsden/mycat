@@ -1,12 +1,12 @@
-# Lab 2 Option 3: Adder
+# Lab 2: Mycat
 
 ## Team
 
- - [Volodymyr Chernetskyi](https://github.com/chernetskyi)
+ - [Denys Maletskyi](https://github.com/maletsden)
 
 ## Prerequisites
 
- - **C++ compiler** - needs to support **C++17** standard
+ - **C++ compiler** - needs to support **C++20** standard
  - **CMake** 3.15+
  
 The rest prerequisites (such as development libraries) can be found in the [packages file](./apt_packages.txt) in the form of the apt package manager package names.
@@ -15,7 +15,7 @@ The rest prerequisites (such as development libraries) can be found in the [pack
 
 1. Clone the project.
     ```bash
-    git clone git@github.com:chernetskyi/cpp-template.git
+    git clone git@github.com:maletsden/mycat.git
     ```
 2. Install required libraries. On Ubuntu:
    ```bash
@@ -30,9 +30,10 @@ The rest prerequisites (such as development libraries) can be found in the [pack
 ## Usage
 
 ```bash
-add [a] [b]
+mycat [-h|--help] [-A] <file1> <file2> ... <fileN>
 ```
 
-If less than two numbers provided, zeroes are used instead. If more - an error occurs.
+If no arguments provided, the program will finish with code 0, but nothing will be printed.
+Option "-A" will print invisible characters as their hex value.
 
 Help flags `-h`/`--help` support is available.
